@@ -1,0 +1,85 @@
+{
+  "stats": [
+    {
+      "name": "q0",
+      "accept": false,
+      "actions": {
+        "1": "q2",
+        "0": "q1"
+      }
+    },
+    {
+      "name": "q1",
+      "accept": true,
+      "actions": {
+        "1": "q6",
+        "0": "q0"
+      }
+    },
+    {
+      "name": "q2",
+      "accept": false,
+      "actions": {
+        "1": "q2",
+        "0": "q3"
+      }
+    },
+    {
+      "name": "q3",
+      "accept": true,
+      "actions": {
+        "1": "q4",
+        "0": "q0"
+      }
+    },
+    {
+      "name": "q4",
+      "accept": true,
+      "actions": {
+        "1": "q5",
+        "0": "q7"
+      }
+    },
+    {
+      "name": "q5",
+      "accept": false,
+      "actions": {
+      }
+    },
+    {
+      "name": "q6",
+      "accept": true,
+      "actions": {
+        "1": "q6",
+        "0": "q7"
+      }
+    },
+    {
+      "name": "q7",
+      "accept": false,
+      "actions": {
+        "1": "q8",
+        "0": "q1"
+      }
+    },
+    {
+      "name": "q8",
+      "accept": false,
+      "actions": {
+        "1": "q9",
+        "0": "q3"
+      }
+    },
+    {
+      "name": "q9",
+      "accept": false,
+      "actions": {
+      }
+    }
+  ],
+  "alphabets": [
+    "0",
+    "1"
+  ],
+  "initial state": "q0"
+}

@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "stats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "accept": {
+            "type": "boolean"
+          },
+          "actions": {
+            "type": "object",
+            "properties": {
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "required": [
+          "name",
+          "actions"
+        ]
+      }
+    },
+    "alphabets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 1
+      }
+    },
+    "initial state": {
+      "type": "string"
+    },
+    "additionalProperties": false
+  },
+  "required": [
+    "stats",
+    "alphabets",
+    "initial state"
+  ]
+}
